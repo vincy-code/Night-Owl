@@ -1,0 +1,12 @@
+body {
+  background-color: black;
+  color: #09f920;
+}
+
+.navbar {
+  height: 55;
+}
+
+.navbar-text {
+  text-align: right;
+}
