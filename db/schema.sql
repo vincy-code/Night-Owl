@@ -1,0 +1,4 @@
+CREATE DATABASE COD_db;
+USE COD_db;
+
+
