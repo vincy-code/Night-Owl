@@ -10,3 +10,19 @@ body {
 .navbar-text {
   text-align: right;
 }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #00FFFF;
+  
+}
+
+.card-body {
+  border-color: #09f920;
+}
+
+.gif {
+  text-align: center;
+}
