@@ -2,3 +2,28 @@ form.signup,
 form.login {
   margin-top: 50px;
 }
+
+body {
+  background-color: black;
+  color: white;
+
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 , .a {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #00FFFF; 
+  text-align: center;
+}
+
+label {
+  color : #09f920;
+}
+
+.btn-default {
+  background-color: #09f920;
+  border-color: #09f920;
+  color: black;
+
+}
