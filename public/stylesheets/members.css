@@ -1,0 +1,29 @@
+body {
+  background-color: black;
+  color: white;
+}
+
+.navbar {
+  height: 55;
+}
+
+.navbar-text {
+  text-align: right;
+}
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #00FFFF;
+  font-size: 18px;
+
+  
+}
+
+.btn-primary {
+  background-color: #09f920;
+  border-color: #09f920;
+  color: black;
+}
+
