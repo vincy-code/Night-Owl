@@ -1,8 +1,10 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+const apiCod = require("../routes/api-cod");
+const axios = require('axios');
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -49,5 +51,28 @@ module.exports = function(app) {
         id: req.user.id
       });
     }
+  });
+  
+  // Sending in the users game-stats from the api
+  app.get("/api/user_data/stats", function(req, res) {
+    // let gamertag = "Sunshine";
+    // let gamerNum = "14256";
+    // let platform = "battle";
+    // `https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/${gamertag}%2523${gamerNum}/${platform}`,
+    axios.get(`https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/Sunshine%252314256/battle`, {
+      headers: {
+        'x-rapidapi-host': 'call-of-duty-modern-warfare.p.rapidapi.com',
+        'x-rapidapi-key': '2dc88bc862msh01a6273fcbf4194p1e37acjsn0de8a177d74a',
+        'content-type': 'application/json',
+        'useQueryString': 'true',
+        'Test-Header': 'test-value'
+      }
+    }).then(function(data) {
+      res.json(data.data);
+    })
+    .catch((err) => {
+      console.log(err);
+    });
+    res.data.headers['Test-Header']; // "test-value"
   });
 };

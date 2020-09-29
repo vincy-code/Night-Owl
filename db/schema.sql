@@ -1,4 +1,8 @@
 CREATE DATABASE COD_db;
 USE COD_db;
 
-
+CREATE TABLE statsGoal(
+  id INT NOT NULL AUTO_INCREMENT,
+  objective VARCHAR(100) NOT NULL,
+  PRIMARY KEY (id)
+);
