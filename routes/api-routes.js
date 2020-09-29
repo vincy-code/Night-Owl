@@ -1,8 +1,9 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
+const apiCod = require("../routes/api-cod")
 
-module.exports = function(app) {
+module.exports = function (app) {
   // Using the passport.authenticate middleware with our local strategy.
   // If the user has valid login credentials, send them to the members page.
   // Otherwise the user will be sent an error
@@ -48,6 +49,15 @@ module.exports = function(app) {
         email: req.user.email,
         id: req.user.id
       });
+
+
     }
+  });
+
+  app.get("/api/user_data/stats", (req, res) => {
+    // Sending in the users game-stats from the api 
+    res.json({
+      kdRatio: req.lifetime.all.properties.kdRatio,
+    })
   });
 };
