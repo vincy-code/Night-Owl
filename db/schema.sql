@@ -6,3 +6,4 @@ CREATE TABLE statsGoal(
   objective VARCHAR(100) NOT NULL,
   PRIMARY KEY (id)
 );
+
