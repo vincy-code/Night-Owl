@@ -1,116 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <title>Night Owl</title>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/lumen/bootstrap.min.css"
-    />
-    <link href="stylesheets/members.css" rel="stylesheet" />
-  </head>
 
-  <body>
-    <!-- NAV -->
-    <nav class="navbar navbar-light bg-light justify-content-between">
-      <a class="navbar-brand" href="#">
-        <img src="assets/night_owl1.png" width="175" height="50" alt="">
-      </a>
-      <a class="navbar-text" href="/logout">
-        Logout
-      </a>
-    </nav>
-    <div class="navbar navbar-light bg-light justify-content-between navbar-brand" >Gamertag: <span class="Gamertag"></span></div>
- 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="card text-center" style="width: 18rem">
+<head>
+  <title>Night Owl</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link href="../public/stylesheets/members.css" rel="stylesheet" />
+</head>
+
+<body>
+
+  <!-- NavBar -->
+  <nav class="navbar">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="./login.html">
+          <img src="../public/assets/night_owl1.png" width="175" height="50" alt="">
+        </a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="active">
+          <a href="#">GamerTag</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a href="./login.html"><span class="glyphicon glyphicon-log-out"></span> LogOut</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main container -->
+
+  <!-- K/D Ratio -->
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-md-3 well">
+        <div class="card ">
+          <div class="well text-center">
             <div class="card-body">
-              <h5 class="card-title">KD RATIO</h5>
+              <h5 href="#">K/D Ratio</h5>
               <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
+                This will be populated with the API.
               </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <br>
-          <div class="card text-center" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">KILLS</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-          <br>
-          <div class="card text-center" style="width: 18rem">
-            <div class="card-body">
-              <h5 class="card-title">DEATHS</h5>
-              <p class="card-text">
-                With supporting text below as a natural lead-in to additional
-                content.
-              </p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
           </div>
         </div>
-  
-        <div class="col-lg-4">
-          <iframe class ="gif" src="https://giphy.com/embed/kOCV8JH59iqpW96JN6" width="250" height="500" frameBorder="0" class="giphy-embed" allowFullScreen></iframe>
-        </div>
-  
-        <div class="col-lg-4">
-          <div class="card" style="width: 18rem">
-            <div class="card text-center" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">PLAY RECCOMENDATIONS</h5>
-                <p class="card-text">
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
+
+        <!-- Kills -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+              <h5 href="#">Kills</h5>
+              <p class="card-text">
+                This will be populated with the API.
+              </p>
             </div>
-            <br />
-            <div class="card text-center" style="width: 18rem">
-              <div class="card-body">
-                <h5 class="card-title">GAME RECCOMENDATIONS</h5>
-                <img class="card-img-top" src="assets/lockedman.png" alt="Card image cap">
-              </div>
-              <br />
-              <div class="card text-center" style="width: 18rem">
-                <div class="card-body">
-                  <h5 class="card-title">GUN RECCOMENDATIONS</h5>
-                  <img class="card-img-top" src="assets/lockedgun.png" alt="Card image cap">
-                </div>
-              </div>
-         </div>
+          </div>
+        </div>
+
+        <!-- Deaths -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+              <h5 href="#">DEATHS</h5>
+              <p class="card-text">
+                This will be populated with the API.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Player Goals -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+              <h5 href="#">Player Goals</h5>
+              <p class="card-text">
+                This will be populated with the API.
+              </p>
+            </div>
+          </div>
+        </div>
+      
+
+        <!-- Compare stats -->
+      <div class="card ">
+        <div class="well text-center">
+          <div class="card-body">
+            <h5 href="#">Compare Stats</h5>
+            <p class="card-text">
+              This will be populated with the API.
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  
 
-   
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="js/members.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-      crossorigin="anonymous"
-    ></script>
-    <script
-      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
-      integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+    <!-- Center element -->
+    <div class="col-md-6">
+      <!-- <div style="width:100%;height:0;padding-bottom:56%;position:relative;"> -->
+      <iframe src="https://giphy.com/embed/d8i1XJjV2Ym53KK0Dn" width="500" height="700" style="position:centered"
+        frameBorder="0" class="giphy-embed" allowFullScreen>
+      </iframe>
+      <!-- </div> -->
+      <!-- <p>
+          <a href="https://giphy.com/gifs/call-of-duty-modern-warfare-captain-price-d8i1XJjV2Ym53KK0Dn">via GIPHY</a>
+        </p> -->
+
+
+      <!-- <iframe class="gif" src="https://giphy.com/embed/kOCV8JH59iqpW96JN6" width="250" height="500" frameBorder="0"
+          class="giphy-embed" allowFullScreen>
+        </iframe> -->
+    </div>
+
+    <!-- Right Column -->
+
+    <!-- Play Recomendations -->
+
+    <div class="col-md-3 well">
+      <div class="card ">
+        <div class="well text-center">
+          <div class="card-body">
+            <h5 class="card-title">PLAY RECCOMENDATIONS</h5>
+            <img class="card-img-top" src="../public/assets/gameplay.png" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+      <!-- Game Recomendations -->
+      <div class="card ">
+        <div class="well text-center">
+          <div class="card-body">
+            <h5 class="card-title">GAME RECCOMENDATIONS</h5>
+            <img class="card-img-top" src="../public/assets/lockedman.png" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+
+      <!-- Gun Recomendations -->
+      <div class="card ">
+        <div class="well text-center">
+          <div class="card-body">
+            <h5 class="card-title">GUN RECCOMENDATIONS</h5>
+            <img class="card-img-top" src="../public/assets/lockedgun.png" alt="Card image cap">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+  <!-- JavaScript -->
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript" src="js/members.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+    integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
