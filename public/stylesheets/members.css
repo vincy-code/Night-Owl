@@ -4,6 +4,24 @@ body {
   /* display: flex; */
 
 }
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 a {
+  font-family: inherit;
+  font-weight: 600;
+  line-height: 1.1;
+  color: #00FFFF;
+  font-size: 18px;
+
+
+}
+
+a {
+  font-size: 24px;
+  font-weight: bolder
+}
+a.line {
+  text-align: center;
+}
 .well {
   background-color: black;
 }
@@ -30,15 +48,7 @@ body {
   text-align: right;
 }
 
-h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 a {
-  font-family: inherit;
-  font-weight: 600;
-  line-height: 1.1;
-  color: #00FFFF;
-  font-size: 18px;
 
-
-}
 
 .btn-primary {
   background-color: #09f920;
