@@ -1,7 +1,7 @@
 // Requiring our models and passport as we've configured it
 const db = require("../models");
 const passport = require("../config/passport");
-// const apiCod = require("../routes/api-cod");
+const apiCod = require("../routes/api-cod");
 const axios = require('axios');
 
 module.exports = function (app) {
