@@ -38,27 +38,27 @@ module.exports = function (app) {
   });
 
   // Route for getting some data about our user to be used client side
-  app.get("/api/user_data", (req, res) => {
-    if (!req.user) {
-      // The user is not logged in, send back an empty object
-      res.json({});
-    } else {
-      // Otherwise send back the user's email and id
-      // Sending back a password, even a hashed password, isn't a good idea
-      res.json({
-        email: req.user.email,
-        id: req.user.id
-      });
-    }
-  });
+  // app.get("/api/user_data", (req, res) => {
+  //   if (!req.user) {
+  //     // The user is not logged in, send back an empty object
+  //     res.json({});
+  //   } else {
+  //     // Otherwise send back the user's email and id
+  //     // Sending back a password, even a hashed password, isn't a good idea
+  //     res.json({
+  //       email: req.user.email,
+  //       id: req.user.id
+  //     });
+  //   }
+  // });
   
   // Sending in the users game-stats from the api
   app.get("/api/user_data/stats", function(req, res) {
-    // let gamertag = "Sunshine";
-    // let gamerNum = "14256";
-    // let platform = "battle";
-    // `https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/${gamertag}%2523${gamerNum}/${platform}`,
-    axios.get(`https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/Sunshine%252314256/battle`, {
+    let gamertag = "Sunshine";
+    let gamerNum = "14256";
+    let platform = "battle";
+    // `https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/Sunshine%252314256/battle`,
+    axios.get(`https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/${gamertag}%2523${gamerNum}/${platform}`, {
       headers: {
         'x-rapidapi-host': 'call-of-duty-modern-warfare.p.rapidapi.com',
         'x-rapidapi-key': '2dc88bc862msh01a6273fcbf4194p1e37acjsn0de8a177d74a',
@@ -68,6 +68,9 @@ module.exports = function (app) {
       }
     }).then(function(data) {
       res.json(data.data);
+      // res.json({
+      //   gamertag: req.gamertag
+      // })
     })
     .catch((err) => {
       console.log(err);
