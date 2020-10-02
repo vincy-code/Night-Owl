@@ -27,3 +27,52 @@ label {
   color: black;
 
 }
+
+section {
+margin: 25px;
+padding: 0;
+position: 10px;
+box-sizing: border-box;
+position: absolute;
+height: 500px;
+display: flex;
+border: 2px solid #000;
+}
+
+section .slide {
+  position: relative;
+  background: #0f0;
+  opacity: 1;
+  height: 600px;
+  flex: 1;
+  border-right: 2px solid #000;
+  overflow: hidden;
+  transition: 0.5s ease-in-out;
+}
+
+
+section .slide:hover {
+  flex-grow: 2;
+}
+
+
+section .slide .content {
+  bottom: 40px;
+  margin: 40px;
+  padding: 30PX;
+  width: 250px;
+  background: #000;
+  color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.5s;
+  transform: translateY(100px);
+} 
+
+section .slide:hover .content {
+  visibility: visible;
+  opacity: 1;
+  transition: 0.5s;
+  transition-delay: 0s;
+  transform: translateY(0);
+}
