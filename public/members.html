@@ -6,7 +6,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link href="stylesheets/members.css" rel="stylesheet" />
+  <link href="../public/stylesheets/members.css" rel="stylesheet" />
 </head>
 
 <body>
@@ -16,7 +16,7 @@
     <div class="container-fluid">
       <div class="navbar-header">
         <a class="navbar-brand" href="./login.html">
-          <img src="assets/night_owl1.png" width="175" height="50" alt="">
+          <img src="../public/assets/night_owl1.png" width="175" height="50" alt="">
         </a>
       </div>
       <ul class="nav navbar-nav">
@@ -48,7 +48,6 @@
             </div>
           </div>
         </div>
-        <br>
 
         <!-- Kills -->
         <div class="card ">
@@ -61,7 +60,6 @@
             </div>
           </div>
         </div>
-        <br>
 
         <!-- Deaths -->
         <div class="card ">
@@ -74,7 +72,6 @@
             </div>
           </div>
         </div>
-        <br>
 
         <!-- Player Goals -->
         <div class="card ">
@@ -87,65 +84,148 @@
             </div>
           </div>
         </div>
-        <br>
-      
+
 
         <!-- Compare stats -->
-      <div class="card ">
-        <div class="well text-center">
-          <div class="card-body">
-            <h5 href="#">Compare Stats</h5>
-            <p class="card-text">
-              This will be populated with the API.
-            </p>
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+              <h5 href="#">Compare Stats</h5>
+              <p class="card-text">
+                This will be populated with the API.
+              </p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <!-- Center element -->
-    <div class="col-md-6">
-      <!-- <div style="width:100%;height:0;padding-bottom:56%;position:relative;"> -->
-      <iframe src="https://giphy.com/embed/d8i1XJjV2Ym53KK0Dn" width="500" height="700" style="position:centered"
-        frameBorder="0" class="giphy-embed" allowFullScreen>
-      </iframe>
-    </div>
+      <!-- Center element -->
+      <div class="col-md-6">
+        <!-- <div style="width:100%;height:0;padding-bottom:56%;position:relative;"> -->
+        <iframe src="https://giphy.com/embed/d8i1XJjV2Ym53KK0Dn" width="500" height="700" style="position:centered"
+          frameBorder="0" class="giphy-embed" allowFullScreen>
+        </iframe>
+        <!-- </div> -->
+        <!-- <p>
+          <a href="https://giphy.com/gifs/call-of-duty-modern-warfare-captain-price-d8i1XJjV2Ym53KK0Dn">via GIPHY</a>
+        </p> -->
 
-    <!-- Right Column -->
 
-    <div class="col-md-3 well">
+        <!-- <iframe class="gif" src="https://giphy.com/embed/kOCV8JH59iqpW96JN6" width="250" height="500" frameBorder="0"
+          class="giphy-embed" allowFullScreen>
+        </iframe> -->
+      </div>
+
+      <!-- Right Column -->
+
       <!-- Play Recomendations -->
-      <div class="card ">
-        <div class="well text-center">
-          <div class="card-body">
-            <h5 class="card-title">PLAY RECCOMENDATIONS</h5>
-            <img class="card-img-top" src="assets/gameplay.png" alt="Card image cap">
+      <div class="col-md-3 well">
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+
+              <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">PLAY RECCOMENDATIONS</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Become a premium Owl!</h4>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Reserved for premium Owls.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+              <img class="card-img-top" src="../public/assets/gameplay.png" alt="Card image cap">
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Game Recomendations -->
-      <div class="card ">
-        <div class="well text-center">
-          <div class="card-body">
-            <h5 class="card-title">GAME RECCOMENDATIONS</h5>
-            <img class="card-img-top" src="assets/lockedman.png" alt="Card image cap">
+        <!-- Game Recomendations -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+
+              <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">GAME RECCOMENDATIONS</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h4 class="modal-title">Become a premium Owl!</h4>
+                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                      </div>
+                      <div class="modal-body">
+                        <p>Reserved for premium Owls.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+              <img class="card-img-top" src="../public/assets/lockedman.png" alt="Card image cap">
+            </div>
           </div>
         </div>
-      </div>
 
-      <!-- Gun Recomendations -->
-      <div class="card ">
-        <div class="well text-center">
-          <div class="card-body">
-            <h5 class="card-title">GUN RECCOMENDATIONS</h5>
-            <img class="card-img-top" src="assets/lockedgun.png" alt="Card image cap">
+        <!-- Gun Recomendations -->
+        <div class="card ">
+          <div class="well text-center">
+            <div class="card-body">
+
+              <div class="container">
+                <!-- Trigger the modal with a button -->
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">GUN RECCOMENDATIONS</button>
+
+                <!-- Modal -->
+                <div class="modal fade" id="myModal" role="dialog">
+                  <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <h4 class="modal-title">Become a premium Owl!</h4>
+                      </div>
+                      <div class="modal-body">
+                        <p>These features are reserved for premium Owls.</p>
+                      </div>
+                      <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <br>
+
+              <img class="card-img-top" src="../public/assets/lockedgun.png" alt="Card image cap">
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-</div>
 
   <!-- JavaScript -->
 
