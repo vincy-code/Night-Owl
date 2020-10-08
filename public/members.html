@@ -93,9 +93,9 @@
           <div class="well text-center">
             <div class="card-body">
               <h5 href="#">Accuracy</h5>
-            <p class="card-text">
-              <span id="acc"></span>
-            </p>
+              <p class="card-text">
+                <span id="acc"></span>
+              </p>
             </div>
           </div>
         </div>
@@ -128,7 +128,8 @@
 
               <div class="container">
                 <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">PLAY RECCOMENDATIONS</button>
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">PLAY
+                  RECCOMENDATIONS</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">
@@ -163,7 +164,8 @@
 
               <div class="container">
                 <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">GAME RECCOMENDATIONS</button>
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">GAME
+                  RECCOMENDATIONS</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">
@@ -171,7 +173,7 @@
                     <div class="modal-content">
                       <div class="modal-header">
                         <h4 class="modal-title">Become a premium Owl!</h4>
-                          <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
                       </div>
                       <div class="modal-body">
                         <p>Reserved for premium Owls.</p>
@@ -198,7 +200,8 @@
 
               <div class="container">
                 <!-- Trigger the modal with a button -->
-                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">GUN RECCOMENDATIONS</button>
+                <button type="button" class="btn btn-info btn-sm" data-toggle="modal" data-target="#myModal">GUN
+                  RECCOMENDATIONS</button>
 
                 <!-- Modal -->
                 <div class="modal fade" id="myModal" role="dialog">
@@ -232,41 +235,13 @@
   <!-- JavaScript -->
 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-  <script type="text/javascript" src="js/members.js"></script>
-  <!-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"></script> -->
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
     integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
     crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
     integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
     crossorigin="anonymous"></script>
-    <script>
-      $(document).ready(() => {
-        axios({
-          "method":"GET",
-          "url":"https://call-of-duty-modern-warfare.p.rapidapi.com/multiplayer/Sunshine%252314256/battle",
-          "headers":{
-          "content-type":"application/octet-stream",
-          "x-rapidapi-host":"call-of-duty-modern-warfare.p.rapidapi.com",
-          "x-rapidapi-key":"2dc88bc862msh01a6273fcbf4194p1e37acjsn0de8a177d74a",
-          "useQueryString":true
-        }
-        })
-        .then((data)=>{
-          $("#tag").text(data.data.username)
-          $("#kd").text(data.data.lifetime.all.properties.kdRatio);
-          $("#wl").text(data.data.lifetime.all.properties.winLossRatio);
-          $("#ttp").text(data.data.lifetime.all.properties.timePlayedTotal);
-          $("#tgp").text(data.data.lifetime.all.properties.gamesPlayed);
-          $("#acc").text(data.data.lifetime.all.properties.accuracy);
-        })
-        .catch((error)=>{
-          console.log(error)
-        })
-      }) 
-      </script>
+  <script type="text/javascript" src="js/members.js"></script>
 </body>
 
 </html>
